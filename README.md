@@ -7,7 +7,7 @@ Steps to run this project:
 1. Run `npm i` command
 2. Run `node index.js` command
 
-## Explaination of bug
+## Explanation of bug
 
 When you add the column to return the id of a relationship, it does not return the
 id for entities added to the database after that point. The console logging walks
