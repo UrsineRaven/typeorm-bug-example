@@ -1,0 +1,24 @@
+{
+  "name": "typeorm-bug-example",
+  "version": "1.0.0",
+  "description": "Example for TypeORM issue #5047",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UrsineRaven/typeorm-bug-example.git"
+  },
+  "author": "UrsineRaven",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/UrsineRaven/typeorm-bug-example/issues"
+  },
+  "homepage": "https://github.com/UrsineRaven/typeorm-bug-example#readme",
+  "dependencies": {
+    "node-pause": "^1.0.1",
+    "sqlite3": "^4.1.0",
+    "typeorm": "^0.2.20"
+  }
+}
