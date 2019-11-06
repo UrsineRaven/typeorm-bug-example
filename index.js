@@ -47,6 +47,8 @@ typeorm.createConnection().then((connection) => {
                         'typeId column, and re-run this program.');
             return;
         } else {
+            // On second run (after typeId is uncommented), add some more events
+            // and print the results to console
             await eventRepo.save([
                 {
                     id: 3,
@@ -68,11 +70,13 @@ typeorm.createConnection().then((connection) => {
                 },
             ]);
             const updatedEvents = await eventRepo.find();
+
             console.log('The results are in. Notice that the events added before the typeId ' +
                         'column was uncommented correctly show the id of the event type. ' + 
                         'Conversely the events added after typeId was uncommented show null ' + 
                         'where the id should be.');
             console.dir(updatedEvents, {compact: false});
+            
             pause('Press any key to reset the database and exit.').then(async (key) => {
                await eventRepo.clear();
                await eventTypeRepo.clear();
