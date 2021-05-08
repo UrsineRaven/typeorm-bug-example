@@ -19,6 +19,6 @@
   "dependencies": {
     "node-pause": "^1.0.1",
     "sqlite3": "^4.1.0",
-    "typeorm": "^0.2.20"
+    "typeorm": "^0.2.25"
   }
 }
